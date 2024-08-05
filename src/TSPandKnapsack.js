@@ -23,10 +23,10 @@ const TspLeaderBoardLineWidth = '0.7'
 const TspLeaderBoardDotWidth = '3'
 const TspCityDargEditorSize = 200;
 const TspLeaderBoardCanvasSize = 200;
-const PopulationSizeSliderMin = 10;
-const PopulationSizeSliderMax = 200;
+const PopulationSizeSliderMin = 1;
+const PopulationSizeSliderMax = 300;
 const CitiesSizeSliderMin = 5;
-const CitiesSizeSliderMax = 50;
+const CitiesSizeSliderMax = 150;
 
 const KnapsackVisualization = ({ selection, numItems }) => {
   return (
@@ -379,7 +379,7 @@ const Main = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Percentage to Evolve: {percentageToEvolve}%
+                    Elite percentage (will make the next generation): {percentageToEvolve}%
                   </label>
                   <Slider
                     value={percentageToEvolve}
@@ -419,7 +419,7 @@ const Main = () => {
                 ): 
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Knapsack size: {numCities}
+                      Knapsack size: {numItems}
                     </label>
                     <Slider
                       value={numItems}
