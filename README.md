@@ -1,6 +1,6 @@
 # Genetic Algorithm Simulation 🧬🔬
 
-![Genetic Algorithm Simulation Banner](https://via.placeholder.com/800x200?text=Genetic+Algorithm+Simulation)
+![Genetic Algorithm Simulation Banner](public/leaderboard.png)
 
 This project is an interactive React-based web application that simulates genetic algorithms for solving two classic optimization problems: the Traveling Salesman Problem (TSP) and the Knapsack Problem.
 
@@ -19,7 +19,7 @@ This project is an interactive React-based web application that simulates geneti
 
 | TSP Simulation | Knapsack Simulation |
 |----------------|---------------------|
-| ![TSP Screenshot](https://via.placeholder.com/400x200?text=TSP+Simulation) | ![Knapsack Screenshot](https://via.placeholder.com/400x200?text=Knapsack+Simulation) |
+| ![TSP Screenshot](public/t1.png) | ![Knapsack Screenshot](public/k1.png) |
 
 ## 🚀 Getting Started
 
@@ -64,7 +64,7 @@ s
    - Percentage to Evolve
    - Generation Time
 
-   ![Parameter Adjustment](https://via.placeholder.com/600x100?text=Parameter+Adjustment+UI)
+   ![Parameter Adjustment](public/Parameters.png)
 
 3. **Start Simulation**:
    - Click "Start" to begin
@@ -74,7 +74,7 @@ s
    - Track fitness over generations
    - View top solutions in the leaderboard
 
-   ![Progress Monitoring](https://via.placeholder.com/600x300?text=Progress+Monitoring+Charts)
+   ![Progress Monitoring](public/over_time.png)
 
 5. **Interact**:
    - Pause/Resume at any time
@@ -91,7 +91,6 @@ s
 5. **Mutation**: Introduce small random changes
 6. **Repeat**: keep on evolving (step2, step3...)
 
-![Genetic Algorithm Process](https://via.placeholder.com/800x200?text=Genetic+Algorithm+Process+Diagram)
 
 ### Problem Specifics
 
