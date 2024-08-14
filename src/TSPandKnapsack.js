@@ -8,9 +8,8 @@ const DEFAULT_POPULATION_SIZE = 24 // amount of "genes" (aka solutions) in each 
 const DEFAULT_MUTATION_RATE = 0.01 // [0,1] (the probability of a gene mutation on each part of the solution) - look at mutate function.
 const DEFAULT_CROSSOVER_RATE = 0.7 // [0,1] (the probability of 2 solutions to create child together) - look at crossover function.
 const DEFAULT_NUM_OF_CITIES = 20 // for TPS problem
-const PERCENTAGE_OF_POPULATION_TO_EVOLVE = 10 // for example 10 => 10% of best solution continue as is to the next generation.
+const DEFAULT_PERCENTAGE_OF_POPULATION_TO_EVOLVE = 10 // for example 10 => 10% of best solution continue as is to the next generation.
 const TournamentSize = 3; // tournament size to chose a random parent in the evolution - look at selectParentFromRandomTournament function.
-const GenerationTime = 1
 const LeaderBoardNumberOfTopSolutions = 50 // as seen in the web GUI leaderboard
 
 // NOTE! if you want to edit the genetic algorithm search for "actual genetic algorithm code" in the code
@@ -59,7 +58,7 @@ const Main = () => {
   const [mutationRate, setMutationRate] = useState(DEFAULT_MUTATION_RATE);
   const [crossoverRate, setCrossoverRate] = useState(DEFAULT_CROSSOVER_RATE);
   const [numCities, setNumCities] = useState(DEFAULT_NUM_OF_CITIES);
-  const [percentageToEvolve, setPercentageToEvolve] = useState(PERCENTAGE_OF_POPULATION_TO_EVOLVE);
+  const [percentageToEvolve, setPercentageToEvolve] = useState(DEFAULT_PERCENTAGE_OF_POPULATION_TO_EVOLVE);
   const [generationTime, setGenerationTime] = useState(1);
   const [bestSolution, setBestSolution] = useState(null);
   const [fitnessHistory, setFitnessHistory] = useState([]);
@@ -71,7 +70,7 @@ const Main = () => {
 
   // this function control how each generation is created
   const evolveGeneration = () => {
-    const eliteCount = Math.floor(populationSize * PERCENTAGE_OF_POPULATION_TO_EVOLVE / 100);
+    const eliteCount = Math.floor(populationSize * DEFAULT_PERCENTAGE_OF_POPULATION_TO_EVOLVE / 100);
     const elite = population.slice(0, eliteCount);
 
     let newPopulation = [...elite];
