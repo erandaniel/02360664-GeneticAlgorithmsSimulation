@@ -275,9 +275,6 @@ const Main = () => {
     setRunning(false);
     setGeneration(0);
     setFitnessHistory([]);
-    if (problem === 'tsp') {
-      generateCitiesRandomly();
-    }
     initializePopulation();
   };
 
