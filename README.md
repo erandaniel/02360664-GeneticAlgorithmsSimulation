@@ -1,11 +1,10 @@
 # Genetic Algorithm Simulation 🧬🔬
 
-
-![Genetic Algorithm Simulation Banner](public/leaderboard.png)
-
 # https://erandaniel.github.io/02360664-GeneticAlgorithmsSimulation/
 
-# note: if you want to update the github-page website run the command "npm run deploy"
+# note! if you want to update the github-page website run the command "npm run deploy"
+
+![Genetic Algorithm Simulation Banner](public/leaderboard.png)
 
 This project is an interactive React-based web application that simulates genetic algorithms for solving two classic optimization problems: the Traveling Salesman Problem (TSP) and the Knapsack Problem.
 
