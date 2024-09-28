@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/02360664-GeneticAlgorithmsSimulation/static/css/main.addb6ac8.css",
-    "main.js": "/02360664-GeneticAlgorithmsSimulation/static/js/main.c927a0ab.js",
+    "main.js": "/02360664-GeneticAlgorithmsSimulation/static/js/main.bb95b186.js",
     "index.html": "/02360664-GeneticAlgorithmsSimulation/index.html",
     "main.addb6ac8.css.map": "/02360664-GeneticAlgorithmsSimulation/static/css/main.addb6ac8.css.map",
-    "main.c927a0ab.js.map": "/02360664-GeneticAlgorithmsSimulation/static/js/main.c927a0ab.js.map"
+    "main.bb95b186.js.map": "/02360664-GeneticAlgorithmsSimulation/static/js/main.bb95b186.js.map"
   },
   "entrypoints": [
     "static/css/main.addb6ac8.css",
-    "static/js/main.c927a0ab.js"
+    "static/js/main.bb95b186.js"
   ]
 }
