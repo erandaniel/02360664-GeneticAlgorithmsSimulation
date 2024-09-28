@@ -1,8 +1,9 @@
 # Genetic Algorithm Simulation 🧬🔬
 
-# https://erandaniel.github.io/02360664-GeneticAlgorithmsSimulation/
+# [Go to the live simulation](https://erandaniel.github.io/02360664-GeneticAlgorithmsSimulation/)
 
-# note! if you want to update the github-page website run the command "npm run deploy"
+## note! if you want to update the github-page website run the command "npm run deploy"
+### for more information: [git hub pages tutorial](https://github.com/gitname/react-gh-pages?tab=readme-ov-file)
 
 ![Genetic Algorithm Simulation Banner](public/leaderboard.png)
 
