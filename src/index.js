@@ -10,7 +10,7 @@ root.render(
     <header className="mb-0">
       <div className="position-relative d-flex align-items-center">
         <img 
-          src="/technion.jpg" 
+          src="technion.jpg" 
           alt="Technion Logo"
           className="h-24 w-auto"
         />
