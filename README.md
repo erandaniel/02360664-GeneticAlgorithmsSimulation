@@ -1,39 +1,65 @@
-# Genetic Algorithm Simulation 🧬🔬
+# Genetic Algorithm Simulation - 02360664
 
-# [Go to the live simulation](https://erandaniel.github.io/02360664-GeneticAlgorithmsSimulation/)
+# [Link to the live simulation - Click here](https://erandaniel.github.io/02360664-GeneticAlgorithmsSimulation/)
 
-## note! if you want to update the github-page website run the command "npm run deploy" [for more information: git hub pages tutorial](https://github.com/gitname/react-gh-pages?tab=readme-ov-file)
 
-![Genetic Algorithm Simulation Banner](public/leaderboard.png)
+This project is an interactive React web application that simulates genetic algorithms for solving optimization problems: currently supporting TSP and the Knapsack Problem (simple case).
 
-This project is an interactive React-based web application that simulates genetic algorithms for solving two classic optimization problems: the Traveling Salesman Problem (TSP) and the Knapsack Problem.
 
-## 🌟 Features
+### How Does It Works
 
-- **Interactive Simulation**: Watch genetic algorithms in action!
-- **Dual Problem Support**: 
-  - 🚗 Traveling Salesman Problem (TSP)
-  - 🎒 Knapsack Problem
-- **Real-time Visualization**: See the evolution process unfold before your eyes
-- **Customizable Parameters**: Fine-tune your genetic algorithm
-- **Performance Tracking**: Monitor fitness improvements over generations
-- **Top Solutions Showcase**: View the best performers in each generation
+1. **Initialization**: Generate random solutions
+2. **Evaluation**: Calculate fitness of each solution
+3. **Selection**: Choose the best solution as parents for next generation (in this program determent by the "Percentage to Evolve" slider)
+4. **Crossover**: Combine parent solutions
+5. **Mutation**: Introduce small random changes (determent by the "Mutation rate" slider)
+6. **Repeat**:  steps 2, 3, 4...
 
-## 🖼️ Screenshots
 
-| TSP Simulation | Knapsack Simulation |
-|----------------|---------------------|
-| ![TSP Screenshot](public/t1.png) | ![Knapsack Screenshot](public/k1.png) |
+###  
 
-## 🚀 Getting Started
+#### Traveling Salesman Problem (TSP)
+- **Goal**: Find the shortest route visiting all cities once
+- **Representation**: Ordered list of city indices
+- **Fitness**: Inverse of total route distance (because shorter routes are better)
 
-### Prerequisites
-s
-- Node.js (v14+ recommended)
-- npm (comes with Node.js)
+#### Knapsack Problem *(the program simulate a special case where all the items have a "size and value of 1", in this is a case where we for sure know the optimal solution (take all the items)*.
+- **Goal**: Maximize value of items in a capacity-constrained knapsack
+- **Representation**: Binary string (1 = include item, 0 = exclude).
+- **Fitness**: Total value of included items.
 
+
+## How to use - User
+
+1. **Choose Problem**:
+   - Traveling Salesman / Knapsack
+
+2. **Adjust Parameters**:
+
+   ![Parameter Adjustment](public/Parameters.png)
+
+3. **Start Simulation**:
+   - Click "Start" to begin
+
+4. **Monitor Progress**:
+   - Track fitness over generations.
+   - View top solutions in the leaderboard.
+
+   ![Progress Monitoring](public/over_time.png)
+
+5. **Interact**:
+   - Pause/Resume/Reset at any time.
+   - You can also change the parameters to and see how its changes the generations over time.
+
+
+
+
+## How to use - Developer
+
+# note! if you want to update the github-page website run the command "npm run deploy" [for more information: git hub pages tutorial](https://github.com/gitname/react-gh-pages?tab=readme-ov-file)
 ### Installation
 
+0. make sure Node.js (v14+ recommended) is installed in your pc.
 1. Clone the repository:
    ```bash
    git clone [repository-url]
@@ -55,60 +81,13 @@ s
    ```
 2. Open your browser and visit `http://localhost:3000`
 
-## 🎮 Usage
 
-1. **Choose Your Problem**:
-   - 🚗 Traveling Salesman
-   - 🎒 Knapsack
-
-2. **Adjust Parameters**:
-   - Population Size
-   - Mutation Rate
-   - Crossover Rate
-   - Percentage to Evolve
-   - Generation Time
-
-   ![Parameter Adjustment](public/Parameters.png)
-
-3. **Start Simulation**:
-   - Click "Start" to begin
-   - Watch the magic happen!
-
-4. **Monitor Progress**:
-   - Track fitness over generations
-   - View top solutions in the leaderboard
-
-   ![Progress Monitoring](public/over_time.png)
-
-5. **Interact**:
-   - Pause/Resume at any time
-   - Reset to start over with new parameters or data
-
-## 🧠 How It Works
-
-### Genetic Algorithm Process
-
-1. **Initialization**: Generate random solutions
-2. **Evaluation**: Calculate fitness of each solution
-3. **Selection**: Choose parents for next generation
-4. **Crossover**: Combine parent solutions
-5. **Mutation**: Introduce small random changes
-6. **Repeat**: keep on evolving (step2, step3...)
+## Screenshots
+| TSP Simulation ||
+|----------------|---------------------|
+![Genetic Algorithm Simulation Banner](public/leaderboard.png)
 
 
-### Problem Specifics
-
-#### Traveling Salesman Problem (TSP)
-- **Goal**: Find the shortest route visiting all cities once
-- **Representation**: Ordered list of city indices
-- **Fitness**: Inverse of total route distance
-
-#### Knapsack Problem
-- **Goal**: Maximize value of items in a capacity-constrained knapsack
-- **Representation**: Binary string (1 = include item, 0 = exclude)
-- **Fitness**: Total value of included items (within capacity)
-
-
----
-
-Happy evolving! 🧬🚀
+|  Knapsack Simulation ||
+|----------------|---------------------|
+| ![Knapsack Screenshot](public/k1.png) |
