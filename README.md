@@ -59,7 +59,7 @@ This project is an interactive React web application that simulates genetic algo
 # note! if you want to update the github-page website run the command "npm run deploy" [for more information: git hub pages tutorial](https://github.com/gitname/react-gh-pages?tab=readme-ov-file)
 ### Installation
 
-0. make sure Node.js (v14+ recommended) is installed in your pc.
+make sure Node.js (v14+ recommended) is installed in your pc!
 1. Clone the repository:
    ```bash
    git clone [repository-url]
