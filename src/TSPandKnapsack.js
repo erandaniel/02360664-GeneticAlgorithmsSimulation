@@ -15,7 +15,6 @@ const LeaderBoardNumberOfTopSolutions = 50 // as seen in the web GUI leaderboard
 // NOTE! if you want to edit the genetic algorithm search for "actual genetic algorithm code" in the code
 
 // boring configuration
-const SHOW_TSP_EDIT_POSITION_MANUALLY = false
 const TspLeaderBoardDotColor = 'blue'
 const TspLeaderBoardLineColor = 'red'
 const TspLeaderBoardLineWidth = '0.7'
